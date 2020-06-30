@@ -10,13 +10,11 @@
 int SumDivisibleBy(int num, int n)
 {
     int p = n / num;
-
     return num * (p * (p + 1)) / 2;
 }
 
 int main()
 {
     int n = 999;
-    
     std::cout << SumDivisibleBy(3, n) + SumDivisibleBy(5, n) - SumDivisibleBy(15, n);
 }
